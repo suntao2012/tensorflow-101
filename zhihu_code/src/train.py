@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import tensorflow as tf
 import random
 import os
@@ -282,7 +283,7 @@ def run():
         logger.info('Write file ends')
     elif FLAGS.mode == 'inference':
         print 'inference'
-        image_file = '../data/test_data/092e9ae8-ee91-11e6-91c1-525400551618_69128.jpeg'
+        image_file = '../data/test_data/' + unicode('亭猫那吉腊咖材年辜惯_3921.jpeg', "utf8")
         final_predict_val, final_predict_index = inference(image_file)
         logger.info('the result info: predict index {0} predict_val {1}'.format( final_predict_index, final_predict_val))
 
